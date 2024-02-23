@@ -1,0 +1,295 @@
+
+
+/* Basic styling for layout */
+body {
+    font-family: 'Merriweather', sans-serif;
+    background-color: #AD8B73;
+    margin: 0;
+    padding:0;
+  }
+
+  #main {
+    position: relative;
+    margin: 0;
+    padding:0;
+  }
+  
+  .image-overlay {
+    position: relative;
+    display: block;
+    width: 100%; /* Adjust to your image size */
+    justify-content: center;
+    opacity: 70%;
+  }
+
+  .image-overlay nav{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+
+    background-color: #cccccc4f;
+
+    height:10%;
+    width: 25%;
+
+    border-radius: 40px;
+
+    
+
+  }
+
+  .image-overlay nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    border:0;
+    margin-top:30%;
+    padding:0;
+    width:100%;
+  }
+  
+  .image-overlay nav ul li {
+    border:0;
+    margin-left:50%;
+    margin-right:50%;
+    padding:0;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .image-overlay nav ul li a {
+    display: flex;
+    text-decoration: none;
+    border:0;
+    margin:0;
+    padding:0;
+
+  }
+  
+  .image-overlay nav ul li a i {
+    border:0;
+    margin:0;
+    padding:0;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 30px; /* Adjust icon size */
+    transition: color 0.1s ease;
+
+  }
+
+  .image-overlay nav ul li a:hover i {
+    color: beige;
+  }
+
+  .image-overlay img {
+    width: 100%; /* Make sure the image covers the container */
+    display: block;
+
+
+  }
+
+
+  .text-overlay {
+    position: absolute;
+    top: 50%; /* Place text in the middle vertically */
+    left: 50%; /* Place text in the middle horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+  }
+  
+  .text-overlay h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  }
+  
+  .text-overlay p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+  }
+
+  #home{
+    margin-top: 0;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+  }
+  
+  #home img{
+    width:70%;
+    height: 70%;
+  }
+
+
+  /* products offered section */
+
+  #products{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+  }
+
+  #products ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: -2.5%;
+    flex-wrap: wrap;
+  }
+
+
+  .product{
+    height: auto;
+    width: 20%;
+    background-color: #ffffff82;
+    border-radius: 5px;
+    margin-inline: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .product img{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    width: 50%;
+    height: 50%;
+  }
+
+
+  /*footer stuff section*/
+  .custom-margin{
+    margin: 80px;
+  }
+
+  .social-buttons {
+    flex-flow: row;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+
+  .social-buttonsEmail {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .social-buttonsFacebook {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .social-buttonsEmail:hover {
+    opacity: 0.8;
+  }
+
+  .social-buttonsFacebook:hover {
+    opacity: 0.8;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.contact-section h2 {
+    width: 100%; /* Make sure the heading takes full width */
+}
+
+.contact-section p {
+    flex: 0 0 48%; /* Adjust the width as needed, leaving some space for margins */
+    margin-bottom: 10px;
+}
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+  }
+
+.social-buttons img {
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: -20px;
+}
+
+.social-buttons img:hover {
+    transform: scale(1.2);
+}
+
+.custom-margin {
+    margin-bottom: 10px;
+}
+
+#footer-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-section {
+  margin: 10px; /* Add margin for spacing, adjust as needed */
+  
+}
+
+.contact-info,
+.Hours,
+.social-buttons {
+  margin-bottom: 20px; /* Add bottom margin for spacing, adjust as needed */
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+
+
+/* Additional styling for clarity */
+.contact-info h2,
+.Hours h2 {
+  margin-bottom: 10px;
+
+}
+
+.Company-Logo{
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  right: 250px;
+  
+  
+}
+.Company-Text{
+  background-color: #AA856B;
+  border-radius: 30px 30px 30px 30px;
+  left: 275px;
+  max-width: 550px;
+  height: auto;
+  bottom: 425px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 0px 8px #333;
+}
+
+
